@@ -1,0 +1,8 @@
+ul {
+  gap: 2em;
+}
+li {
+  height: auto;
+  padding: 1.1em;
+  font-size: 1.3em;
+}

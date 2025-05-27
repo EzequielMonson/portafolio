@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+    <div class="d-flex align-items-center gap-2" (click)="goTo('/')">
+        <fa-icon style="font-size: 2em; color: white" [icon]="faLaptopCode"></fa-icon>
+        <p class="navbar-brand">Ezequiel Monson</p>
+    </div>
+ 
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><p (click) ="goTo('/')">Inicio</p></li>
+      <li class="nav-item"><p (click) ="goTo('proyectos')">Proyectos</p></li>
+      <li class="nav-item"><p (click) ="goTo('github')">GitHub</p></li>
+      <li class="nav-item"><p (click) ="goTo('estudios')">Estudios</p></li>
+      <li class="nav-item"><p (click) ="goTo('contacto')">Contacto</p></li>
+    </ul>
+  </div>
+</nav>

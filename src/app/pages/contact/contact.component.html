@@ -1,0 +1,111 @@
+
+<div *ngIf="!enviando && !mensajeEnviado" class="contenedor-principal">
+  <form [formGroup]="contactForm" (ngSubmit)="sendEmail()">
+    <div class="titulo-form">
+      <h3>Contáctame</h3>
+    </div>
+    <div [ngClass]="{ 'form-controls': true, error: formHasErrors() }">
+      <!-- Nombre -->
+      <div class="input-container">
+        <input
+          id="name"
+          formControlName="name"
+          placeholder="Nombre"
+          [ngClass]="{
+            error:
+              contactForm.get('name')?.invalid &&
+              contactForm.get('name')?.touched
+          }"
+        />
+        <div
+          class="tooltip-error"
+          *ngIf="
+            contactForm.get('name')?.invalid && contactForm.get('name')?.touched
+          "
+        >
+          <span *ngIf="contactForm.get('name')?.hasError('required')"
+            >El nombre es obligatorio</span
+          >
+          <span *ngIf="contactForm.get('name')?.hasError('minlength')"
+            >Mínimo 3 caracteres</span
+          >
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="input-container">
+        <input
+          type="email"
+          formControlName="email"
+          placeholder="Email"
+          [ngClass]="{
+            error:
+              contactForm.get('email')?.invalid &&
+              contactForm.get('email')?.touched
+          }"
+        />
+        <div
+          class="tooltip-error"
+          *ngIf="
+            contactForm.get('email')?.invalid &&
+            contactForm.get('email')?.touched
+          "
+        >
+          <span *ngIf="contactForm.get('email')?.hasError('required')"
+            >El email es obligatorio.</span
+          >
+          <span *ngIf="contactForm.get('email')?.hasError('email')"
+            >Formato inválido</span
+          >
+        </div>
+      </div>
+
+      <!-- Mensaje -->
+      <div class="input-container">
+        <textarea
+          formControlName="message"
+          placeholder="Mensaje"
+          [ngClass]="{
+            error:
+              contactForm.get('message')?.invalid &&
+              contactForm.get('message')?.touched
+          }"
+        ></textarea>
+        <div
+          class="tooltip-error"
+          *ngIf="
+            contactForm.get('message')?.invalid &&
+            contactForm.get('message')?.touched
+          "
+        >
+          <span *ngIf="contactForm.get('message')?.hasError('required')"
+            >El mensaje es obligatorio.</span
+          >
+          <span *ngIf="contactForm.get('message')?.hasError('minlength')"
+            >Mínimo 10 caracteres</span
+          >
+        </div>
+      </div>
+
+      <!-- Botón -->
+      <button type="submit" [disabled]="contactForm.invalid">Enviar</button>
+    </div>
+  </form>
+</div>
+<div *ngIf="enviando" class="contenedor-principal">
+  <div class="cta-estado">
+    <div class="cta-estado-img">
+      <div class="spinner"></div>
+      <p class="info-text">Enviando mensaje...</p>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="mensajeEnviado" class="contenedor-principal">
+  <div class="cta-estado">
+    <div class="cta-estado-img">
+      <fa-icon style="font-size: 10em; color: green" [icon]="faCheck"></fa-icon>
+      <p class="info-text">Mensaje enviado</p>
+    </div>
+  </div>
+</div>

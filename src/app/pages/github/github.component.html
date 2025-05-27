@@ -1,0 +1,14 @@
+<h2>Repositorios de GitHub</h2>
+<div class="row">
+  <div class="col-md-6 mb-4" *ngFor="let repo of repositorios">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title">{{ repo.name }}</h5>
+        <p class="card-text">{{ repo.description || 'Sin descripción' }}</p>
+        <a [href]="repo.html_url" class="btn btn-outline-primary btn-sm" target="_blank">
+          Ver en GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+.nav-item p {
+  color: white;
+  font-size: larger;
+  text-transform: capitalize;
+}
+p {
+  margin: 0;
+}
+.navbar-expand-lg .navbar-nav {
+  gap: 2em;
+}
+@media (max-width: 710px) {
+  .navbar-expand-lg .navbar-nav {
+    gap: initial;
+  }
+}
