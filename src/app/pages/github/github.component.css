@@ -1,0 +1,14 @@
+.card-body {
+  background-color: #1c1c1c !important;
+  border-radius: 1em;
+}
+.card {
+  border-color: #0d0d0d !important;
+  background-color: #0d0d0d;
+}
+.card-title{
+    color: white !important;
+}
+.card-text{
+    color: white !important;
+}

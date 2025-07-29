@@ -1,6 +1,105 @@
-.card-body {
-  min-height: 21em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+
+
+
+/* Encabezado */
+h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin-bottom: 2rem;
+}
+
+/* Tarjeta del proyecto */
+.proyecto-card {
+  background-color: #7b1e1e; /* Bordó rojizo */
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  max-width: 360px;
+  margin: auto;
+}
+
+/* Título */
+.proyecto-card h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Descripción */
+.proyecto-card p {
+  color: #f1f1f1;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+/* Testimonio */
+.testimonio {
+  background-color: #4e1414; /* Más oscuro que el bordó principal */
+  border-left: 4px solid #2c8c64; /* Verde contrastante */
+  border-radius: 12px;
+  padding: 16px;
+  font-style: italic;
+  margin-top: 16px;
+  color: #f4f4f4;
+}
+
+/* Tarjetas */
+.card {
+  background-color: #3e1111; /* fondo bordó oscuro */
+  border: 1px solid #5c1c1c; /* borde bordó intermedio */
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #f1f5f9;
+}
+
+.card-text {
+  color: #e2e8f0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Comentarios */
+.comentario-box {
+  background-color: #501a1b; /* tono más profundo del bordó */
+  border-left: 4px solid #14532d; /* borde verde oscuro */
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+.comentario-text {
+  font-style: italic;
+  color: #d1d5db;
+}
+
+/* Botones */
+.btn {
+  display: inline-block;
+  margin-top: auto;
+  background-color: #14532d; /* verde oscuro */
+  color: #f1f5f9;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1e4628; /* verde más intenso al hacer hover */
 }

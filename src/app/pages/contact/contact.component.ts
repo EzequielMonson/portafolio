@@ -34,7 +34,7 @@ export class ContactComponent {
         next: () => {
           this.enviando = false;
           this.mensajeEnviado = true; // 🟢 Mostrar "Mensaje enviado"
-          this.toastService.showExito('¡Mensaje enviado con éxito!');
+          // this.toastService.showExito('¡Mensaje enviado con éxito!');
 
           // ⏱️ Cerrar el formulario después de 3 segundos
           setTimeout(() => {
@@ -43,7 +43,7 @@ export class ContactComponent {
         },
         error: (err) => {
           this.enviando = false;
-          this.toastService.showError('Error al enviar el mensaje.');
+          // this.toastService.showError('Error al enviar el mensaje.');
         },
       });
     } 

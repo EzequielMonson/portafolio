@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class EmailService {
-  private apiUrl = 'https://ejemplo/backend/sendMail.php';
+  private apiUrl = 'https://ezequielmonson.com/backend/sendMail.php';
 
   constructor(private http: HttpClient) {}
 

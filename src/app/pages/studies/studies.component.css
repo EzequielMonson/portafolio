@@ -1,8 +1,19 @@
 ul {
   gap: 2em;
+  border: 0;
 }
 li {
   height: auto;
   padding: 1.1em;
   font-size: 1.3em;
 }
+.list-group{
+  border-radius: 0 !important; 
+}
+.list-group-item {
+  background-color: #1c1c1c !important;
+  border-color: #0d0d0d;
+  border-radius: 0.5em;
+  color: white;
+}
+

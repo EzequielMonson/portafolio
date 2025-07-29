@@ -11,8 +11,15 @@ import { Component } from '@angular/core';
 export class ProjectsComponent {
   proyectos = [
     {
+      nombre: 'Roberto Automotores',
+      descripcion: 'Landing page desarrollada con Angular para Roberto Automotores, una agencia cordobesa especializada ventas de autos usados.',
+      comentario: 'Ezequiel es de total confianza, trabaja rápido y explica todo con claridad y amabilidad. Fue muy fácil comunicarme con él y resolvió todo de forma eficiente. Lo súper recomiendo ✨',
+      link: 'https://robertoautomotores.com.ar',
+    },
+    {
       nombre: 'Dexus',
       descripcion: 'Landing page desarrollada con Angular y Firebase para Dexus, una empresa cordobesa especializada en el mantenimiento, reparación y armado de computadoras personalizadas. El sitio destaca los servicios ofrecidos, incluyendo el armado de PCs para gamers y profesionales, venta de notebooks y celulares a pedido, y entrega a domicilio sin cargo dentro de Córdoba.',
+      comentario: '',
       link: 'https://dexus.com.ar',
     },
     {

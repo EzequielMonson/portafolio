@@ -17,7 +17,7 @@ $nombre = htmlspecialchars($data['name']);
 $email = htmlspecialchars($data['email']);
 $mensaje = nl2br(htmlspecialchars($data['message']));
 
-$to = "ezemonson2024@gmail.com";
+$to = "info@ezequielmonson.com";
 $subject = "Contacto Landing";
 
 // Definir el cuerpo del email con diseño
@@ -26,7 +26,7 @@ $cuerpo = "
 <body style='width:800px; font-family:Arial, Helvetica, sans-serif; background-color:#f9f9f9; padding:20px;'>
 
     <div style='background-color:#333; color:#fff; padding:15px; text-align:center; font-size:20px; font-weight:bold;'>
-        Mensaje enviado a través del Sitio Dexus
+        Mensaje enviado a través del Portafolio
     </div>
 
     <div style='background:#e5e5e5; padding:10px; margin-top:15px;'>
@@ -53,7 +53,7 @@ $cuerpo = "
 // Configurar encabezados
 $headers = "MIME-Version: 1.0\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8\r\n";
-$headers .= "From: ezemonson2024@gmail.com\r\n";
+$headers .= "From: info@ezequielmonson.com\r\n";
 $headers .= "Reply-To: $email\r\n";
 
 // Enviar correo y responder JSON
