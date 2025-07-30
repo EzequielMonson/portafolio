@@ -1,6 +1,3 @@
-
-
-
 /* Encabezado */
 h2 {
   text-align: center;
@@ -14,7 +11,7 @@ h2 {
 .proyecto-card {
   background-color: #7b1e1e; /* Bordó rojizo */
   border-radius: 16px;
-  padding: 24px;
+  /* padding: 24px; */
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
   max-width: 360px;
   margin: auto;
@@ -47,8 +44,6 @@ h2 {
 
 /* Tarjetas */
 .card {
-  background-color: #3e1111; /* fondo bordó oscuro */
-  border: 1px solid #5c1c1c; /* borde bordó intermedio */
   border-radius: 16px;
   padding: 1.5rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
@@ -59,7 +54,9 @@ h2 {
   transform: translateY(-6px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
-
+.card-body {
+  padding: 0 !important;
+}
 .card-title {
   font-size: 1.3rem;
   font-weight: 700;
@@ -102,4 +99,368 @@ h2 {
 
 .btn:hover {
   background-color: #1e4628; /* verde más intenso al hacer hover */
+}
+/* Roberto Automotores */
+.roberto-card {
+  background: linear-gradient(
+    to bottom,
+    #1a0000,
+    #330000
+  ); /* Degradado oscuro bordó */
+  border: 1px solid #9f1d1d; /* Rojo vivo, como en los bordes de las tarjetas */
+  border-radius: 18px;
+  color: #ffffff;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.roberto-card .card-title {
+  padding: 1em;
+  background-color: #000;
+  border-top-left-radius: 0.8em;
+  border-top-right-radius: 0.8em;
+}
+
+.roberto-card .card-title .logo {
+  height: 2em;
+}
+.roberto-card .card-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  padding: 1em 1.5em;
+  line-height: 1.6;
+  margin-bottom: 0;
+  color: #f3f4f6;
+}
+
+.roberto-card .comentario-box {
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(255, 255, 255, 0.05); /* Transparente sutil */
+  border-left: 4px solid #9f1d1d;
+  padding: 1rem;
+  margin: 0 1.5em;
+  border-radius: 10px;
+  color: #e2e8f0;
+  margin-top: 1rem;
+}
+
+.roberto-card .btn {
+  font-family: "Poppins", sans-serif;
+  background-color: #9f1d1d; /* Rojo fuerte */
+  color: white;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  margin: 1.5em;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.roberto-card .btn:hover {
+  background-color: #b42c2c;
+}
+
+/* Dexus */
+.dexus-card {
+  background: linear-gradient(
+    145deg,
+    #ac73ff,
+    #578cff,
+    #03a4ff
+  ); /* Gradiente corregido */
+  border: 1px solid #67e8f9; /* borde cian claro */
+  border-radius: 18px;
+  padding: 0 !important;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dexus-card .card-title {
+  display: flex;
+
+  background-color: black;
+  padding: 1em;
+
+  border-top-left-radius: 0.8em;
+  border-top-right-radius: 0.8em;
+}
+.dexus-card .card-title .title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.dexus-card .card-title .logo {
+  height: 1.2em;
+}
+.dexus-card .card-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  color: #f1f5f9;
+  line-height: 1.6;
+  padding: 1em 1.5em;
+}
+.dexus-card .comentario-box {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+  border-left: 4px solid #ac73ff;
+  color: black;
+  border-radius: 10px;
+  margin: 0 1.5em;
+  padding: 1rem;
+}
+.dexus-card .comentario-box .comentario-text{
+  color: black;
+}
+
+.dexus-card .btn {
+  font-family: "Poppins", sans-serif;
+  background-color: #012e98 !important; /* Azul Dexus corregido */
+  border-color: #012e98 !important;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  margin: 1.5em;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.dexus-card .btn:hover {
+  background-color: #0139b7 !important;
+  border-color: #0139b7 !important;
+}
+
+/* YashiGames - Halloween */
+.yashi-card {
+  background: radial-gradient(
+    circle,
+    #e3d078,
+    #de6a30
+  ); /* Fondo naranja como la landing */
+  border-radius: 18px;
+  padding: 0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #1f1f1f;
+}
+
+.yashi-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+
+.yashi-card .card-title {
+  background-color: black;
+  padding: 0.5em;
+  border-top-left-radius: 0.8em;
+  border-top-right-radius: 0.8em;
+}
+.yashi-card .card-title .title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+}
+.yashi-card .card-title .logo {
+  height: 2em;
+}
+.yashi-card .card-text {
+  font-size: 1rem;
+  color: #222;
+  border-radius: 1em;
+  background-color: #f9efe0;
+  margin: 0 1.5em;
+  line-height: 1.6;
+  padding: 1em 1.5em;
+}
+
+.yashi-card .comentario-box {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-left: 4px solid #ff7518;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 1rem;
+  color: #333;
+  font-style: italic;
+}
+
+.yashi-card .btn {
+  background-color: #ff7518;
+  color: white;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  margin: 1.5em;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.yashi-card .btn:hover {
+  background-color: #e66b16;
+}
+
+/* SleepCraft */
+.sleepcraft-card {
+  background-color: #5e9393; /* gris azulado claro */
+  color: #1e293b; /* gris azulado oscuro */
+  border-radius: 18px;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sleepcraft-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.sleepcraft-card .card-title {
+  background-color: #164564;
+  padding: 0.5em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top-left-radius: 0.8em;
+  border-top-right-radius: 0.8em;
+}
+.sleepcraft-card .card-title .logo {
+  height: 4em;
+}
+.sleepcraft-card .card-title .title {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.sleepcraft-card .card-text {
+  font-weight: 300;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 1.2rem;
+  color: white;
+  line-height: 1.6;
+  padding: 1em 1.5em;
+  border-radius: 0 0 1em 1em;
+}
+
+.sleepcraft-card .comentario-box {
+  font-weight: 300;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  border-left: 4px solid #475569;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem 1.5rem;
+  font-style: italic;
+  color: white;
+}
+
+.sleepcraft-card .btn {
+  background-color: #306b6b;
+  color: white;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  margin: 1.5em;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.sleepcraft-card .btn:hover {
+  background-color: #1e293b;
+}
+
+/* PulgaBurger */
+.pulga-card {
+  background: linear-gradient(
+    to right,
+    #ffb703,
+    #fbbf24
+  ); /* amarillo brillante */
+  color: #111827; /* casi negro */
+  border-radius: 18px;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pulga-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+.pulga-card .card-title {
+  background-color: #111111;
+  padding: 0.5em 0.5em 0.5em 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top-left-radius: 0.8em;
+  border-top-right-radius: 0.8em;
+}
+.pulga-card .card-title .title {
+  color: white;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 0 #1e013b, -2px -2px 0 #1e013b, -2px 2px 0 #1e013b,
+    2px -2px 0 #1e013b, 2px 0 0 #1e013b, -2px 0 0 #1e013b, 0 2px 0 #1e013b,
+    0 -2px 0 #1e013b;
+  font-family: "Poppins", sans-serif;
+}
+.pulga-card .card-title .logo {
+  height: 4em;
+}
+.pulga-card .card-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: #1f2937;
+  line-height: 1.6;
+  padding: 1em 1.5em;
+  margin: 1em;
+  background-color: #fffbe6;
+  border-radius: 1em;
+}
+
+.pulga-card .comentario-box {
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #000;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem 1.5rem;
+  font-style: italic;
+  color: #1f2937;
+}
+
+.pulga-card .btn {
+  background-color: #660b8a;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  margin: 1.5em;
+  border-radius: 9999px; /* forma de píldora */
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pulga-card .btn:hover {
+  background-color: #1f1f1f;
+  transform: scale(1.05);
 }
