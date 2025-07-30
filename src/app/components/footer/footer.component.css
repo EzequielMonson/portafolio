@@ -3,6 +3,9 @@
   justify-content: start;
   gap: 1em;
 }
+footer{
+  background-color: var(--color-primary);
+}
 @media (max-width: 768px) {
   .footer-item {
     justify-content: center;

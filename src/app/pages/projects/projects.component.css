@@ -145,15 +145,19 @@ h2 {
   color: #e2e8f0;
   margin-top: 1rem;
 }
-
+.contenedor-btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 .roberto-card .btn {
   font-family: "Poppins", sans-serif;
   background-color: #9f1d1d; /* Rojo fuerte */
   color: white;
   font-weight: 600;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   border-radius: 10px;
-  margin: 1.5em;
+  margin: 1.2em !important;
   text-decoration: none;
   display: inline-block;
   transition: background-color 0.3s ease;
@@ -215,7 +219,7 @@ h2 {
   margin: 0 1.5em;
   padding: 1rem;
 }
-.dexus-card .comentario-box .comentario-text{
+.dexus-card .comentario-box .comentario-text {
   color: black;
 }
 
@@ -225,9 +229,9 @@ h2 {
   border-color: #012e98 !important;
   color: #ffffff;
   font-weight: 600;
-  padding: 0.6rem 1.2rem;
+  padding: 1rem;
   border-radius: 10px;
-  margin: 1.5em;
+  margin: 1.2em !important;
   text-decoration: none;
   display: inline-block;
   transition: background-color 0.3s ease;
@@ -296,8 +300,9 @@ h2 {
   background-color: #ff7518;
   color: white;
   font-weight: 600;
-  padding: 0.6rem 1.2rem;
-  margin: 1.5em;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 1rem !important;
   border-radius: 10px;
   text-decoration: none;
   display: inline-block;
@@ -372,7 +377,7 @@ h2 {
   color: white;
   font-weight: 600;
   padding: 0.6rem 1.2rem;
-  margin: 1.5em;
+  margin: 1.2em !important;
   border-radius: 10px;
   text-decoration: none;
   display: inline-block;
@@ -380,7 +385,7 @@ h2 {
 }
 
 .sleepcraft-card .btn:hover {
-  background-color: #1e293b;
+  background-color: #306b6b;
 }
 
 /* PulgaBurger */
@@ -453,7 +458,7 @@ h2 {
   color: white;
   font-weight: 600;
   padding: 0.6rem 1.2rem;
-  margin: 1.5em;
+  margin: 1.2em !important;
   border-radius: 9999px; /* forma de píldora */
   text-decoration: none;
   display: inline-block;
@@ -461,6 +466,6 @@ h2 {
 }
 
 .pulga-card .btn:hover {
-  background-color: #1f1f1f;
+  background-color: #660b8a;
   transform: scale(1.05);
 }

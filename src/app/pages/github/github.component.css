@@ -1,14 +1,14 @@
 .card-body {
-  background-color: #1c1c1c !important;
+  background: var(--color-card) !important;
   border-radius: 1em;
 }
 .card {
-  border-color: #0d0d0d !important;
-  background-color: #0d0d0d;
+  border-color: transparent !important;
+  background-color: transparent;
 }
 .card-title{
-    color: white !important;
+    color: var(--color-secondary) !important;
 }
 .card-text{
-    color: white !important;
+    color: var(--color-secondary) !important;
 }

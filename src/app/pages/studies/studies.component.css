@@ -8,12 +8,13 @@ li {
   font-size: 1.3em;
 }
 .list-group{
-  border-radius: 0 !important; 
+  border-radius: 0 !important;
+  margin-bottom: 2em;
 }
 .list-group-item {
-  background-color: #1c1c1c !important;
-  border-color: #0d0d0d;
+  background: var(--color-card) !important;
+  border: 0;
   border-radius: 0.5em;
-  color: white;
+  color: var(--color-secondary);
 }
 

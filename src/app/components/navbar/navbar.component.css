@@ -1,7 +1,11 @@
 .nav-item p {
-  color: white;
+  color:var(--color-text);
   font-size: larger;
+  font-family: var(--font-family);
   text-transform: capitalize;
+}
+.navbar{
+  background-color: var(--color-primary);
 }
 p {
   margin: 0;

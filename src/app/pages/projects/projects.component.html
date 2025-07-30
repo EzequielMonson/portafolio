@@ -12,8 +12,9 @@
         <div *ngIf="proyecto.comentario" class="comentario-box">
           <p class="comentario-text">“{{ proyecto.comentario }}”</p>
         </div>
-        <div class="mt-auto">
+        <div class="contenedor-btn mt-auto">
           <a [href]="proyecto.link" class="btn btn-main mt-3" target="_blank">Ver proyecto</a>
+          <button *ngIf="proyecto.estilo" class="btn btn-style mt-2 ms-2" (click)="aplicarEstilo(proyecto.estilo)">Aplicar estilo</button>
         </div>
       </div>
     </div>
